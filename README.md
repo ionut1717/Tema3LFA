@@ -74,7 +74,7 @@ A -> aA | c
 B -> bB | c
 END_PRODUCTION_RULES
 END
----
+```
 
 * `NON_TERMINALS`: Comma-separated list of non-terminal symbols.
 
