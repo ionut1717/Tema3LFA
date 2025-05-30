@@ -63,7 +63,8 @@ The `input.txt` file should contain one or more tasks. Each task starts with `ta
 
 This task defines a new CFG and verifies its correctness. If valid, it becomes the `working_CFG` for subsequent tasks.
 
-```text
+```
+text
 task1
 NON_TERMINALS: S, A, B
 TERMINALS: a, b, c
@@ -73,7 +74,7 @@ S -> aA | bB
 A -> aA | c
 B -> bB | c
 END_PRODUCTION_RULES
-END
+END 
 ```
 
 * `NON_TERMINALS`: Comma-separated list of non-terminal symbols.
@@ -92,35 +93,37 @@ END
 
 Generates a specified number of strings from the current `working_CFG`, up to a given maximum length.
 
+```
 task2
 3  // Number of strings to generate (max 10)
 8  // Maximum length of generated strings (max 10)
 END
+```
 
 #### Task 3: Find Leftmost Derivation
 
 Attempts to find and print the leftmost derivation for a `target_string` using the `working_CFG`.
-
+```
 task3
 aaac // Target string
 END
 #### Task 4: Recognize Strings
-
+```
 Checks if a list of `target_string`s can be recognized by the `working_CFG` (i.e., if a leftmost derivation exists). Prints `True` or `False` for each.
-
+```
 task4
 2 // Number of strings to recognize
 aaac
 bbbc
 END
-
+```
 #### Task 5: Bonus CFG Example
 
 This task demonstrates a predefined bonus CFG, prints its details, generates a string, and attempts to recognize a specific string.
-
+```
 task5
 END
-
+```
 ## Class Structure (`CFG` class)
 
 ### `__init__(self, non_terminals, terminals, production_rules, start_symbol)`
