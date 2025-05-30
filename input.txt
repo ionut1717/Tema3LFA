@@ -1,0 +1,24 @@
+task1
+NON_TERMINALS: S,A
+TERMINALS: a, b,c,d
+START_SYMBOL: S
+PRODUCTION_RULES:
+S -> aSb | cA | dAd
+S -> | aaSb | aS
+A -> abc
+END_PRODUCTION_RULES
+END
+task2
+1
+7
+END
+task3
+acabcb
+END
+task4
+1
+adabcd
+END
+task5
+END
+
