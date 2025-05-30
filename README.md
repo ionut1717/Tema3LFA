@@ -63,6 +63,7 @@ The `input.txt` file should contain one or more tasks. Each task starts with `ta
 
 This task defines a new CFG and verifies its correctness. If valid, it becomes the `working_CFG` for subsequent tasks.
 
+```text
 task1
 NON_TERMINALS: S, A, B
 TERMINALS: a, b, c
@@ -73,6 +74,7 @@ A -> aA | c
 B -> bB | c
 END_PRODUCTION_RULES
 END
+---
 
 * `NON_TERMINALS`: Comma-separated list of non-terminal symbols.
 
